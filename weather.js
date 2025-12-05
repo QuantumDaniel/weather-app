@@ -3,10 +3,9 @@ const weather = async () => {
     
     const cit = document.getElementById('cityInput');
     const response = await axios.get(
-      https://api.openweathermap.org/data/2.5/weather?q=${cit.value}&appid=2bf16272cbbba5a92d8b525b30a378d7&units=metric
-    );
+      `https://api.openweathermap.org/data/2.5/weather?q=${cit.value}&appid=2bf16272cbbba5a92d8b525b30a378d7&units=metric`);
     
-  let details2 = JSON.stringify(response.data, null, 2);
+   let details2 = JSON.stringify(response.data, null, 2);
   let details = (response.data);
     
     let city = document.querySelector('.city');
